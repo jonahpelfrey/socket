@@ -41,7 +41,7 @@ app.use(morgan('dev'));
 app.use(allowCrossDomain);
 
 /*CONNECT TO DATABASE */
-mongoose.connect('mongodb://localhost/trivia', function(error) {
+mongoose.connect('mongodb://heroku_gv4p04mb:2bh2gqbg0muhbhgkgrcjlduo2t@ds133261.mlab.com:33261/heroku_gv4p04mb', function(error) {
 	if(error) console.log(error);
 	else console.log("| Connected to Trivia Database |");
 });
