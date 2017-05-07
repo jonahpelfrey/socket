@@ -1,0 +1,43 @@
+<div class="row">
+	<div class="col-md-6">
+		<div class="panel panel-default">
+			<div class="panel-heading">Register</div>
+			<div class="panel-body">
+				<div class="input-group" style="margin-bottom: 10px;">
+					<span class="input-group-addon"><i class="fa fa-user"></i></span>
+					<input ng-model="name" class="form-control" placeholder="Name">
+				</div>
+				<div class="input-group" style="margin-bottom: 10px;">
+					<span class="input-group-addon"><i class="fa fa-user"></i></span>
+					<input ng-model="token" class="form-control" placeholder="Token">
+				</div>
+				<div class="col-md-12" style="margin-bottom: 10px;">
+					<button ng-click="addUser()" class="btn btn-success btn-block">Add User</button>
+				</div>
+				<div class="col-md-12" style="margin-bottom: 10px;">
+					<button ng-click="join()" class="btn btn-warning btn-block">Join Game</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="panel panel-default">
+			<div class="panel-heading">Members</div>
+			<div class="panel-body">
+				<table class="table table-striped">
+			        <thead>
+						<tr>
+						<th>Name</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr ng-repeat="user in users">
+							<td>{{user.name}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
